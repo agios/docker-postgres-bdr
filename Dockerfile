@@ -30,7 +30,7 @@ RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/* \
 RUN echo 'deb http://packages.2ndquadrant.com/bdr/apt/ jessie-2ndquadrant main ' > /etc/apt/sources.list.d/2ndquadrant.list
 
 ENV PG_MAJOR 9.4
-ENV PG_VERSION 9.4.1-2jessie
+ENV PG_VERSION 9.4.5-2jessie
 
 RUN apt-get update \
   && apt-get install -y postgresql-common \
